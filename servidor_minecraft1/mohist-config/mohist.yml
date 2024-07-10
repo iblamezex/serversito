@@ -1,0 +1,6 @@
+mohist:
+  lang: en
+  libraries:
+    check: true
+    downloadsource: AUTO
+  installation-finished: false
