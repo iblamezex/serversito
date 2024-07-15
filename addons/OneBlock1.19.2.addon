@@ -1,0 +1,20 @@
+:main
+a_name Oneblock 1.19.2
+a_author luna
+
+:button OneBlock 1.19.2
+text Instalar OneBlock (1.19.2 / Vanilla)
+remove_server
+download_version n forge 1.19.2
+config server_type forge
+config server_version 1.19.2
+config_save
+say Descargando OneBlock...
+download_file https://mediafilez.forgecdn.net/files/3806/821/Oneblock%201.9.0.zip oneblock.zip
+unzip oneblock.zip
+exec rm server-icon.png
+download_file https://www.dropbox.com/scl/fi/rwcaasa0y17m17vbkpeh9/icon.png?rlkey=znaxxw3w9r9ucrxbarxis4sd3&st=2uh1aug6&dl=1 server-icon.png
+exec mv "Oneblock 1.9.0" "world"
+exec rm oneblock.zip
+say OneBlock instalado!
+sleep 3 
